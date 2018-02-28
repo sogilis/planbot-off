@@ -1,0 +1,34 @@
+;; Configuration pour planbot-off
+
+[bdd]
+host           = <database host on AWS>
+user           = <database user, preferably read only>
+dbname         = <database name>
+p              = <password>
+
+[google]
+;; I guess this does not change
+scope          = https://spreadsheets.google.com/feeds
+
+secret         = <my-project-xxxxxxxxx.json>
+sheetname      = <My awesome Google spreadshit>
+sheettab       = <I love long tab names with spaces>
+
+;; Table sample :
+;;
+;;    |   F  |   G  |   H
+;; ---+------+------+------
+;;  1 | toto | titi | tutu
+;; ---+------+------+------
+;;  2 | 25   | 50   |
+;; ---+------+------+------
+;;  3 |      |      | 75
+;; ---+------+------+------
+;;  4 | 100  |      | 100
+;; ---+------+------+------
+;;  5 | 100  |      | 100
+;; ---+------+------+------
+;;
+;; First cell is F1, cell(1, 6)
+first_cell_row = 1
+first_cell_col = 6

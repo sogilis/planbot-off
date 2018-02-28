@@ -1,3 +1,4 @@
 config.cfg
 *.json
 py3env/
+gspread
